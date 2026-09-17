@@ -70,6 +70,11 @@ nav {
   transition: background .4s;
 }
 nav.scrolled { background: rgba(7,2,0,0.97); border-bottom: 1px solid rgba(200,80,0,0.15); }
+.nav-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .nav-logo {
   font-family: 'Cinzel', serif;
   font-size: 20px;
@@ -78,6 +83,13 @@ nav.scrolled { background: rgba(7,2,0,0.97); border-bottom: 1px solid rgba(200,8
   text-decoration: none;
 }
 .nav-logo span { color: var(--gold); }
+.nav-address {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: rgba(240,230,204,0.5);
+  text-transform: none;
+}
 .nav-links { display: flex; gap: 36px; list-style: none; }
 .nav-links a {
   font-family: 'DM Sans', sans-serif;
@@ -447,7 +459,10 @@ footer {
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#" class="nav-logo">KEBAP <span>·</span> HÜRTH</a>
+  <div class="nav-logo-wrap">
+    <a href="#" class="nav-logo">KEBAP <span>·</span> HÜRTH</a>
+    <span class="nav-address">Lüxemburger Straße 281, Hürth</span>
+  </div>
   <ul class="nav-links">
     <li><a href="#menu">Speisekarte</a></li>
     <li><a href="#about">Über uns</a></li>
@@ -646,7 +661,7 @@ footer {
       <div>
         <div class="contact-block">
           <h3>Adresse</h3>
-          <p>Hürth, Nordrhein-Westfalen<br>Deutschland</p>
+          <p>Lüxemburger Straße 281 Hürth, Nordrhein-Westfalen<br>Deutschland</p>
         </div>
         <div class="contact-block">
           <h3>Öffnungszeiten</h3>
